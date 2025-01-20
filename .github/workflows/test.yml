@@ -20,6 +20,10 @@ jobs:
         with:
           submodules: recursive
 
+      - name: install dependencies
+        run: |
+          yarn
+
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
 
