@@ -24,7 +24,7 @@ clean:
 ########################################## CORE DEPLOYMENTS ##########################################
 script-upgrade:
 	@echo "Upgrade proxy contract on $(NETWORK)..."
-	forge script script/deploy/UpgradeBlueChip.s.sol --rpc-url $(NETWORK) --broadcast
+	forge script script/deploy/UpgradeBlueChip.s.sol --rpc-url $(NETWORK)
 
 script-withdraw:
-	forge script script/deploy/WithdrawToReceiver.s.sol --rpc-url $(NETWORK) --broadcast
+	forge script script/deploy/WithdrawToReceiver.s.sol --rpc-url $(NETWORK)
